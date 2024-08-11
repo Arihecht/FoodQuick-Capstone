@@ -27,7 +27,7 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
 
     // File paths
-    String driversFilePath = "txt_files" + File.separator + "drivers.txt";
+    String driversFilePath = "txt_files" + File.separator + "drivers-info.txt";
     String invoiceFilePath = "txt_files" + File.separator + "invoice.txt";
 
     try {
@@ -37,7 +37,7 @@ public class Main {
       String specialInstructions = captureSpecialInstructions(scanner);
       double totalAmount = calculateTotalAmount(meals);
 
-      // Read drivers from the drivers.txt file
+      // Read drivers from the drivers-info.txt file
       List<String[]> drivers = readDrivers(driversFilePath);
 
       // Check if there is a driver in both the customer's city and the restaurant's city
